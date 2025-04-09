@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>累积记账</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>简单记账小程序</h1>
+        <div class="input-sty">
+            <label for="type">收支类型:</label>
+            <select id="type">
+                <option value="in">收入</option>
+                <option value="out">支出</option>
+            </select>
+        </div>
+        <div class="input-sty">
+            <label for="jine">金额:</label>
+            <input type="number" id="jine" placeholder="请输入金额">
+        </div>
+        <button id="submit-but">提交</button>
+    </div>
+    <h2>记录</h2>
+    <div id="jilu">
+        <p>暂无记录</p>
+    </div>
+    <script src="src.js"></script>
+</body>
+</html>
