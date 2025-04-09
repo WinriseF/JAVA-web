@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>算命小游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>星座算命小游戏</h1>
+        <div class="form">
+            <label for="name">姓名</label>
+            <input type="text" id="name" placeholder="请输入您的姓名">
+        </div>
+        <div class="form">
+            <label for="birthday">出生日期</label>
+            <input type="date" id="birthday" placeholder="请选择出生日期">
+        </div>
+        <button onclick="kaishi()">开始赛博之旅</button>
+        <article id="result">
+            <h2>测试结果</h2>
+            <p id="xingzuo"></p>
+            <p id="xingge"></p>
+        </article>
+    </main>
+    <script src="src.js"></script>
+</body>
+</html>
