@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>页面 A</title>
+</head>
+<body>
+
+    <%-- 使用 include 指令包含登录表单/逻辑 --%>
+    <%@ include file="loginForm.jsp" %>
+
+    <h1>这里是页面 A 的主要内容</h1>
+
+    <p><a href="B.jsp">去页面 B</a></p>
+    <%
+        // 检查是否已登录
+        if (loggedInUser != null) {
+    %>
+    <p><a href="logout.jsp">登出</a></p>
+    <%  }else { %>
+    <p>请登录以访问此页面。</p>
+    <% } %>
+</body>
+</html>
